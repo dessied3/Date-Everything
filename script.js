@@ -1,14 +1,7 @@
 function myfunction() {
-    
-    let attack = parseInt(document.getElementById("attack").value);
-    let defense = parseInt(document.getElementById("defense").value);
-
-    let info ="";
-    if (attack > defense){
-        info = "You should focus on defesive gear!";
-    }else {
-        info ="Your defense is solid, boost attack!";
+    let smarts ="";
+    smarts = document.getElementById('smarts')
+    if (smarts != 0){
+        print('successfully stored smarts points')
     }
-
-    document.getElementById("results").innerText = info;
 };
