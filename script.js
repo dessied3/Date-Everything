@@ -1,5 +1,10 @@
 function myfunction() {
-    let smarts = "";
-    smarts = document.getElementById("smarts");
-    document.getElementById("result").innerHTML = "success";
+    let results;
+
+    if (document.getElementById("smarts") !=0){
+        results = "success"; 
+    }else{
+        results = "not success"; 
+    }
+    document.getElementById("result").innerHTML = results;
 };
