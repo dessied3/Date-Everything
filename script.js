@@ -1,5 +1,5 @@
-document.getElementById("stats-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.getElementById("calcBtn").addEventListener("click", function(){
+    
     let attack = parseInt(document.getElementById("attack").value);
     let defense = parseInt(document.getElementById("defense").value);
 
