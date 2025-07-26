@@ -1,7 +1,7 @@
 function myfunction() {
     let results;
-
-    if (document.getElementById("smarts").value !=0){
+    let val = parseInt(document.getElementById("smarts").value)
+    if (val != 0){
         results = "success"; 
     }else{
         results = "not success"; 

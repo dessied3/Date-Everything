@@ -14,7 +14,10 @@ print(date_a_dex_smarts)
 
 us_col_names = ['smarts', 'poise', 'empathy', 'charm', 'sass']
 my_specs_data = [0, 60, 5, 35, 70]
-my_specs = pd.DataFrame(columns=us_col_names)
+my_specs = pd.DataFrame([my_specs_data], columns=us_col_names)
 
 
+lowest_spec = my_specs.idxmin(axis=1)
+highest_spec = my_specs.idxmax(axis=1)
+print(lowest_spec, highest_spec)
 
