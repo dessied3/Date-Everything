@@ -1,7 +1,5 @@
 function myfunction() {
-    let smarts ="";
-    smarts = document.getElementById("smarts")
-    if (smarts != 0){
-        document.getElementById("result").innerHTML = "success"
-    }
+    let smarts = "";
+    smarts = document.getElementById("smarts");
+    document.getElementById("result").innerHTML = "success";
 };
