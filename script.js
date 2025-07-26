@@ -1,4 +1,4 @@
-document.getElementById("calcBtn").addEventListener("click", function(){
+function myfunction() {
     
     let attack = parseInt(document.getElementById("attack").value);
     let defense = parseInt(document.getElementById("defense").value);
@@ -11,4 +11,4 @@ document.getElementById("calcBtn").addEventListener("click", function(){
     }
 
     document.getElementById("results").innerText = info;
-});
+};
