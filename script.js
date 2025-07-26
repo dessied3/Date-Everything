@@ -1,7 +1,7 @@
 function myfunction() {
     let results;
 
-    if (document.getElementById("smarts") !=0){
+    if (document.getElementById("smarts").value !=0){
         results = "success"; 
     }else{
         results = "not success"; 
