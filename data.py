@@ -17,7 +17,9 @@ my_specs_data = [0, 60, 5, 35, 70]
 my_specs = pd.DataFrame([my_specs_data], columns=us_col_names)
 
 
-lowest_spec = my_specs.idxmin(axis=1)
-highest_spec = my_specs.idxmax(axis=1)
-print(lowest_spec, highest_spec)
+lowest_spec_name = my_specs.idxmin(axis=1)
+highest_spec_name = my_specs.idxmax(axis=1)
 
+date_a_dex_sorted  = date_a_dex.sort_values(by=[lowest_spec_name[0]])
+
+print(date_a_dex_sorted)
